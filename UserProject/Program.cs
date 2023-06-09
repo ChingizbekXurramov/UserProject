@@ -11,8 +11,7 @@
             Console.WriteLine("1. Sign up");
             Console.WriteLine("2. Log in");
             Console.WriteLine("3. Delete user");
-            Console.WriteLine("4. Exit");
-            Console.Write("Enter your choice: ");
+           Console.Write("Enter your choice: ");
             string choice = Console.ReadLine();
             switch (choice)
             {
@@ -25,11 +24,9 @@
                 case "3":
                     DeleteUser();
                     break;
-                case "4":
-                    Environment.Exit(0);
-                    break;
-                default:
+                 default:
                     Console.WriteLine("Invalid choice! Try again.");
+                    Start();
                     break;
             }
 
